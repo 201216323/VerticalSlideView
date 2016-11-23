@@ -76,6 +76,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 intent.putExtra("top", "ViewPager");
                 intent.putExtra("bottom", "ScrollView");
                 break;
+            case 12:
+                intent.putExtra("top", "ScrollView");
+                intent.putExtra("bottom", "ScrollView");
+                break;
         }
         startActivity(intent);
     }
@@ -98,6 +102,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             strings.add("GridView与ViewPager");
             strings.add("RecyclerView与WebView");
             strings.add("ViewPager与ScrollView");
+            strings.add("ScrollView与ScrollView");
         }
 
         @Override

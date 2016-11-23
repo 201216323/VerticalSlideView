@@ -28,7 +28,7 @@ public class Fragment_WebView extends BaseFragment {
         if (null != webview) {
             hasInited = true;
             progressBar.setVisibility(View.GONE);
-            webview.loadUrl("https://github.com/jeasonlzy0216");
+            webview.loadUrl("http://www.apkbus.com/thread-252748-1-1.html");
         }
     }
 

@@ -47,6 +47,7 @@ public class Fragment_ViewPager extends BaseFragment {
             fragments.put("ListView", new Fragment_ListView());
             fragments.put("GridView", new Fragment_GridView());
             fragments.put("WebView", new Fragment_WebView());
+            fragments.put("ScrollView", new Fragment_ScrollView2());
             fragments.put("View", new Fragment_View());
 
             titles = new ArrayList<>();

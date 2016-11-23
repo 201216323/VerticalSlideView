@@ -11,7 +11,7 @@ import com.lzy.verticalslideview.fragment.BaseFragment;
 import com.lzy.verticalslideview.fragment.Fragment_GridView;
 import com.lzy.verticalslideview.fragment.Fragment_ListView;
 import com.lzy.verticalslideview.fragment.Fragment_RecyclerView;
-import com.lzy.verticalslideview.fragment.Fragment_ScrollView;
+import com.lzy.verticalslideview.fragment.Fragment_ScrollView2;
 import com.lzy.verticalslideview.fragment.Fragment_ViewPager;
 import com.lzy.verticalslideview.fragment.Fragment_WebView;
 import com.lzy.widget.VerticalSlide;
@@ -36,7 +36,7 @@ public class DragActivity extends AppCompatActivity implements View.OnClickListe
         String bottom = intent.getStringExtra("bottom");
 
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        if ("ScrollView".equals(top)) topFragment = new Fragment_ScrollView();
+        if ("ScrollView".equals(top)) topFragment = new Fragment_ScrollView2();
         if ("ListView".equals(top)) topFragment = new Fragment_ListView();
         if ("GridView".equals(top)) topFragment = new Fragment_GridView();
         if ("WebView".equals(top)) topFragment = new Fragment_WebView();
@@ -44,7 +44,7 @@ public class DragActivity extends AppCompatActivity implements View.OnClickListe
         if ("ViewPager".equals(top)) topFragment = new Fragment_ViewPager();
         transaction.replace(R.id.first, topFragment);
 
-        if ("ScrollView".equals(bottom)) bottomFragment = new Fragment_ScrollView();
+        if ("ScrollView".equals(bottom)) bottomFragment = new Fragment_ScrollView2();
         if ("ListView".equals(bottom)) bottomFragment = new Fragment_ListView();
         if ("GridView".equals(bottom)) bottomFragment = new Fragment_GridView();
         if ("RecyclerView".equals(bottom)) bottomFragment = new Fragment_RecyclerView();
